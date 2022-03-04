@@ -1,0 +1,157 @@
+body#theme_1 {
+  background-color: #3a4764;
+}
+
+body#theme_1 header h1 {
+  color: white;
+}
+
+body#theme_1 header .switch-style span {
+  color: white;
+}
+
+body#theme_1 header .switch-style .switch-box {
+  background-color: #232c43;
+}
+
+body#theme_1 header .switch-style .switch-box .switch-button {
+  background-color: #d03f2f;
+}
+
+body#theme_1 main .screen {
+  background-color: #182034;
+}
+
+body#theme_1 main .keyboard {
+  background-color: #232c43;
+}
+
+body#theme_2 {
+  background-color: #e6e6e6;
+}
+
+body#theme_2 header h1 {
+  color: #35352c;
+}
+
+body#theme_2 header .switch-style span {
+  color: #35352c;
+}
+
+body#theme_2 header .switch-style .switch-box {
+  background-color: #d1cccc;
+}
+
+body#theme_2 header .switch-style .switch-box .switch-button {
+  background-color: #ca5502;
+}
+
+body#theme_2 main .screen {
+  background-color: #ededed;
+}
+
+body#theme_2 main .screen .history {
+  color: #383530;
+}
+
+body#theme_2 main .screen .result {
+  color: #343429;
+}
+
+body#theme_2 main .keyboard {
+  background-color: #d1cccc;
+}
+
+body#theme_2 main .keyboard .operator,
+body#theme_2 main .keyboard .number {
+  background-color: #e5e4e1;
+  color: #000;
+}
+
+body#theme_2 main .keyboard #del,
+body#theme_2 main .keyboard #reset {
+  background-color: #377f86;
+  color: white;
+  -webkit-box-shadow: 0 0.19em 0em #1b5f65;
+          box-shadow: 0 0.19em 0em #1b5f65;
+}
+
+body#theme_2 footer .attribution {
+  color: black;
+  font-size: 11px;
+  text-align: center;
+  padding: 1.6em;
+}
+
+body#theme_2 footer .attribution a {
+  color: blue;
+}
+
+body#theme_3 {
+  background-color: #160628;
+}
+
+body#theme_3 header h1 {
+  color: #ffe53d;
+}
+
+body#theme_3 header .switch-style span {
+  color: #ffe53d;
+}
+
+body#theme_3 header .switch-style .switch-box {
+  background-color: #1d0934;
+}
+
+body#theme_3 header .switch-style .switch-box .switch-button {
+  background-color: #00e0d1;
+}
+
+body#theme_3 main .screen {
+  background-color: #1d0934;
+}
+
+body#theme_3 main .screen .history {
+  color: #ffe53d;
+}
+
+body#theme_3 main .screen .result {
+  color: #ffe53d;
+}
+
+body#theme_3 main .keyboard {
+  background-color: #1d0934;
+}
+
+body#theme_3 main .keyboard .number,
+body#theme_3 main .keyboard .operator {
+  background-color: #341c4f;
+  color: #ffe53d;
+}
+
+body#theme_3 main .keyboard #del,
+body#theme_3 main .keyboard #reset {
+  color: white;
+  background-color: #58077d;
+  -webkit-box-shadow: 0 0.19em 0em #bc15f4;
+          box-shadow: 0 0.19em 0em #bc15f4;
+}
+
+body#theme_3 main .keyboard #output {
+  background-color: #00e0d1;
+  color: #1b2428;
+  -webkit-box-shadow: 0 0.19em 0em #6cf9f2;
+          box-shadow: 0 0.19em 0em #6cf9f2;
+}
+
+body#theme_3 footer .attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  padding: 1.6em;
+}
+
+body#theme_3 footer .attribution a {
+  color: #ff0;
+}
+/*# sourceMappingURL=theme.css.map */

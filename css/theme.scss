@@ -1,0 +1,189 @@
+// Theme 1
+
+$bg_main1: hsl(222, 26%, 31%);
+$bg_keypad1: hsl(223, 31%, 20%);
+$bg_screen1: hsl(224, 36%, 15%);
+$actionBtn1: hsl(225, 21%, 49%);
+$shadow_actionBtn1: hsl(224, 28%, 35%);
+$outputBtn1: hsl(6, 63%, 50%);
+$shadow_outputBtn1: hsl(6, 70%, 34%);
+$keyBtn1: hsl(30, 25%, 89%);
+$shadow_keyBtn1: hsl(28, 16%, 65%);
+$white: hsl(0, 0, 100%);
+$key_text1: hsl(221, 14%, 31%);
+
+// Theme 2
+
+$bg_main2: hsl(0, 0%, 90%);
+$bg_keypad2: hsl(0, 5%, 81%);
+$bg_screen2: hsl(0, 0%, 93%);
+$actionBtn2: hsl(185, 42%, 37%);
+$shadow_actionBtn2: hsl(185, 58%, 25%);
+$outputBtn2: hsl(25, 98%, 40%);
+$shadow_outputBtn2: hsl(25, 99%, 27%);
+$keyBtn2: hsl(45, 7%, 89%);
+$shadow_keyBtn2: hsl(35, 11%, 61%);
+$key_text2: hsl(60, 10%, 19%);
+
+// Theme 3
+
+$bg_main3: hsl(268, 75%, 9%);
+$bg_keypad3: hsl(268, 71%, 12%);
+$actionBtn3: hsl(281, 89%, 26%);
+$shadow_actionBtn3: hsl(285, 91%, 52%);
+$outputBtn3: hsl(176, 100%, 44%);
+$shadow_outputBtn3: hsl(177, 92%, 70%);
+$keyBtn3: hsl(268, 47%, 21%);
+$shadow_keyBtn3: hsl(290, 70%, 36%);
+$key_text3: hsl(52, 100%, 62%);
+$output_text: hsl(198, 20%, 13%);
+
+body#theme_1 {
+  background-color: $bg_main1;
+  header {
+    h1 {
+      color: $white;
+    }
+    .switch-style {
+      span {
+        color: $white;
+      }
+      .switch-box {
+        background-color: $bg_keypad1;
+
+        .switch-button {
+          background-color: $outputBtn1;
+        }
+      }
+    }
+  }
+  main {
+    .screen {
+      background-color: $bg_screen1;
+    }
+    .keyboard {
+      background-color: $bg_keypad1;
+    }
+  }
+}
+
+body#theme_2 {
+  background-color: $bg_main2;
+  header {
+    h1 {
+      color: $key_text2;
+    }
+    .switch-style {
+      span {
+        color: $key_text2;
+      }
+      .switch-box {
+        background-color: $bg_keypad2;
+
+        .switch-button {
+          background-color: $outputBtn2;
+        }
+      }
+    }
+  }
+  main {
+    .screen {
+      background-color: $bg_screen2;
+
+      .history {
+        color: rgb(56, 53, 48);
+      }
+      .result {
+        color: #343429;
+      }
+    }
+    .keyboard {
+      background-color: $bg_keypad2;
+      .operator,
+      .number {
+        background-color: $keyBtn2;
+        color: #000;
+      }
+      #del,
+      #reset {
+        background-color: $actionBtn2;
+        color: $white;
+        box-shadow: 0 0.19em 0em $shadow_actionBtn2;
+      }
+    }
+  }
+  footer {
+    .attribution {
+      color: rgb(0, 0, 0);
+      font-size: 11px;
+      text-align: center;
+      padding: 1.6em;
+    }
+    .attribution a {
+      color: blue;
+    }
+  }
+}
+
+body#theme_3 {
+  background-color: $bg_main3;
+  header {
+    h1 {
+      color: $key_text3;
+    }
+    .switch-style {
+      span {
+        color: $key_text3;
+      }
+      .switch-box {
+        background-color: $bg_keypad3;
+
+        .switch-button {
+          background-color: $outputBtn3;
+        }
+      }
+    }
+  }
+  main {
+    .screen {
+      background-color: $bg_keypad3;
+
+      .history {
+        color: $key_text3;
+      }
+      .result {
+        color: $key_text3;
+      }
+    }
+    .keyboard {
+      background-color: $bg_keypad3;
+      .number,
+      .operator {
+        background-color: $keyBtn3;
+        color: $key_text3;
+      }
+      #del,
+      #reset {
+        color: $white;
+        background-color: $actionBtn3;
+        box-shadow: 0 0.19em 0em $shadow_actionBtn3;
+      }
+      #output {
+        background-color: $outputBtn3;
+        color: $output_text;
+        box-shadow: 0 0.19em 0em $shadow_outputBtn3;
+      }
+    }
+  }
+  footer {
+    .attribution {
+      color: rgb(255, 255, 255);
+      font-size: 11px;
+      text-align: center;
+      padding: 1.6em;
+    }
+    .attribution a {
+      color: #ff0;
+    }
+  }
+}

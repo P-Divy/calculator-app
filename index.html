@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body id="theme_1">
+    <header>
+      <h1>calc</h1>
+      <div class="switch-style">
+        <span>THEME</span>
+        <div class="switch-box" id="circle-theme">
+          <div class="switch-button-text">
+            <span id="theme1">1</span>
+            <span id="theme2">2</span>
+            <span id="theme3">3</span>
+          </div>
+          <div class="switch-button"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="screen">
+        <div class="history"></div>
+        <div id="output">
+          <input
+            type="text"
+            class="result"
+            id="output-value"
+            placeholder="0"
+            disabled
+          />
+        </div>
+      </div>
+      <div class="keyboard">
+        <div class="col">
+          <button class="number" value="7">7</button>
+          <button class="number" value="4">4</button>
+          <button class="number" value="1">1</button>
+          <button class="operator" value="decimal">.</button>
+        </div>
+        <div class="col">
+          <button class="number" value="8">8</button>
+          <button class="number" value="5">5</button>
+          <button class="number" value="2">2</button>
+          <button class="number" value="0">0</button>
+        </div>
+        <div class="col">
+          <button class="number" value="9">9</button>
+          <button class="number" value="6">6</button>
+          <button class="number" value="3">3</button>
+          <button class="operator" value="/">/</button>
+        </div>
+        <div class="col">
+          <button class="operator" id="del" value="del">DEL</button>
+          <button class="operator" value="+">+</button>
+          <button class="operator" value="-">-</button>
+          <button class="operator" value="*">x</button>
+        </div>
+        <div class="buttons">
+          <button id="reset" value="reset">RESET</button>
+          <button id="output" value="output">=</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Divya Pednekar</a>.
+      </div>
+    </footer>
+
+    <script src="./js/animation.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

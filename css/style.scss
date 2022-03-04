@@ -1,0 +1,185 @@
+@mixin basic($color, $size) {
+  font-family: "Spartan", sans-serif;
+  color: $color;
+  font-size: $size;
+}
+
+@mixin flexBox($type, $direction, $align, $justify) {
+  display: $type;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+body {
+  transition: 1s ease;
+  font-size: 50%;
+}
+
+header {
+  @include flexBox(flex, row, center, center);
+  background-color: transparent;
+  min-width: 43em;
+  max-width: 43em;
+  margin: auto;
+  margin-top: 5%;
+  h1 {
+    display: block;
+    width: 50%;
+    @include basic(#fff, 1.5rem);
+  }
+  .switch-style {
+    @include flexBox(flex, row, center, flex-end);
+    width: 50%;
+    span {
+      display: block;
+      padding: 0.5rem;
+      @include basic(#fff, 0.8rem);
+    }
+    .switch-box {
+      display: flex;
+      width: 4rem;
+      height: 1.5rem;
+      position: relative;
+      border-radius: 30px;
+      transition: 0.5s ease;
+      .switch-button-text {
+        @include flexBox(flex, row, center, center);
+        width: 100%;
+        position: absolute;
+        bottom: 0%;
+        span {
+          height: 2rem;
+          @include basic(#fff, 0.6rem);
+        }
+      }
+      .switch-button {
+        width: 17px;
+        height: 17px;
+        margin: 0.4em;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+main {
+  @include flexBox(flex, column, center, center);
+  background-color: transparent;
+  margin: auto;
+  .screen {
+    @include flexBox(flex, column, flex-end, center);
+    width: 50em;
+    padding: 1em;
+    border-radius: 15px;
+    transition: 1s ease;
+    .history {
+      @include basic(#fff, 1rem);
+    }
+    .result {
+      display: block;
+      width: 90%;
+      text-align: end;
+      margin: auto;
+      padding: 0.3em;
+      @include basic(#fff, 2.5rem);
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(5, 2rem);
+    gap: 1rem;
+    margin-top: 2em;
+    border-radius: 15px;
+    transition: 1s ease;
+    padding: 3em;
+    button {
+      width: 100%;
+      @include basic(#585a64, 1.5rem);
+      padding: 0.5em;
+      box-shadow: 0 0.19em 0em #a99c97;
+      border-radius: 5px;
+      font-size: 1.3rem;
+      border: none;
+      text-align: center;
+      cursor: pointer;
+    }
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #del,
+    #reset {
+      display: block;
+      text-align: center;
+      background-color: hsl(225, 21%, 49%);
+      font-size: 1.3rem;
+      color: #fff;
+      box-shadow: 0 0.19em 0em hsl(224, 28%, 35%);
+    }
+    #output {
+      display: block;
+      background-color: hsl(6, 63%, 50%);
+      color: white;
+      font-size: 1.3rem;
+      box-shadow: 0 0.19em 0em hsl(6, 70%, 34%);
+    }
+    .number {
+      display: block;
+      background-color: hsl(30, 25%, 89%);
+    }
+    .operator {
+      background-color: #b6bbc8;
+    }
+    .buttons {
+      @include flexBox(flex, row, center, center);
+      gap: 1rem;
+      margin-top: 1rem;
+      grid-column: 1/5;
+      grid-row: 6/6;
+    }
+  }
+}
+
+footer {
+  .attribution {
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    text-align: center;
+    padding: 1.6em;
+  }
+  .attribution a {
+    @include basic(#ff0, 1rem);
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    .attribution {
+      font-size: 11px;
+      padding: 1.6em;
+    }
+    .attribution a {
+      color: #ff0;
+      font-size: 11px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    min-width: 40em;
+    max-width: 40em;
+  }
+  main {
+    width: 40em;
+    .screen {
+      width: 45em;
+    }
+  }
+}
